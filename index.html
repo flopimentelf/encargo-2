@@ -1,55 +1,182 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios Estudiantiles | UdeC</title>
+
+  <title>Dirección de Servicios Estudiantiles | UdeC</title>
+
+  <!-- Conexión con la hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- ENCABEZADO -->
   <header>
     <h1>Dirección de Servicios Estudiantiles</h1>
     <p>Universidad de Concepción</p>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
-    <section>
-      <h2>Tu vida universitaria</h2>
+
+    <!-- PRESENTACIÓN -->
+    <section class="presentacion">
+      <p class="etiqueta">TU VIDA UNIVERSITARIA</p>
+
+      <h2>Una universidad para vivirla en plenitud.</h2>
+
       <p>
         Encuentra servicios, espacios y actividades que acompañan
-        tu experiencia universitaria.
+        tu experiencia universitaria y contribuyen a tu bienestar.
       </p>
+
+      <a class="boton" href="#servicios">
+        Descubre nuestros servicios ↘
+      </a>
     </section>
 
-    <section>
-      <h2>Nuestros servicios</h2>
+    <!-- SERVICIOS -->
+    <section id="servicios">
 
-      <div>
-        <h3>Bienestar estudiantil</h3>
-        <p>Apoyo y orientación para estudiantes.</p>
-      </div>
+      <p class="etiqueta">CONOCE LA DISE</p>
+      <h2>Estamos aquí para ti.</h2>
 
-      <div>
-        <h3>Salud</h3>
-        <p>Información sobre atención y cuidado de la salud.</p>
-      </div>
+      <p class="introduccion">
+        Explora las áreas de apoyo que contribuyen a tu desarrollo
+        y bienestar durante la etapa universitaria.
+      </p>
 
-      <div>
-        <h3>Deportes</h3>
-        <p>Actividades físicas y talleres deportivos.</p>
-      </div>
+      <div class="rejilla-servicios">
 
-      <div>
-        <h3>Actividades extraprogramáticas</h3>
-        <p>Espacios culturales, creativos y recreativos.</p>
+        <article class="tarjeta">
+          <span class="icono">♡</span>
+          <h3>Bienestar estudiantil</h3>
+          <p>
+            Encuentra orientación y apoyo para tu experiencia
+            y desarrollo como estudiante.
+          </p>
+          <a href="https://dise.udec.cl/">Conocer más ↗</a>
+        </article>
+
+        <article class="tarjeta">
+          <span class="icono">＋</span>
+          <h3>Salud</h3>
+          <p>
+            Infórmate sobre alternativas de atención y cuidado
+            de la salud durante tu vida universitaria.
+          </p>
+          <a href="https://dise.udec.cl/">Conocer más ↗</a>
+        </article>
+
+        <article class="tarjeta">
+          <span class="icono">⚽</span>
+          <h3>Deportes</h3>
+          <p>
+            Descubre talleres y actividades para mantenerte
+            en movimiento y compartir con otros estudiantes.
+          </p>
+          <a href="#deportes">Explorar deportes ↗</a>
+        </article>
+
+        <article class="tarjeta">
+          <span class="icono">✳</span>
+          <h3>Actividades extraprogramáticas</h3>
+          <p>
+            Participa en experiencias culturales, creativas
+            y recreativas dentro de la comunidad universitaria.
+          </p>
+          <a href="https://dise.udec.cl/">Conocer más ↗</a>
+        </article>
+
       </div>
     </section>
+
+    <!-- DEPORTES -->
+    <section id="deportes" class="seccion-deportes">
+
+      <div class="deportes-texto">
+        <p class="etiqueta">MUÉVETE A TU RITMO</p>
+
+        <h2>Tu próxima actividad favorita te espera.</h2>
+
+        <p>
+          El deporte también forma parte de la experiencia
+          universitaria. Explora alternativas para aprender,
+          compartir y mantenerte activo.
+        </p>
+
+        <a class="boton" href="https://dise.udec.cl/">
+          Explorar actividades ↗
+        </a>
+      </div>
+
+      <div class="deportes-imagen">
+        <img
+          src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=1000&q=80"
+          alt="Personas practicando una actividad deportiva"
+        >
+      </div>
+
+    </section>
+
+    <!-- ACTIVIDADES -->
+    <section id="actividades">
+
+      <p class="etiqueta">MÁS OPORTUNIDADES</p>
+      <h2>Haz espacio para nuevas experiencias.</h2>
+
+      <div class="rejilla-actividades">
+
+        <article class="actividad">
+          <p class="numero">01 / CULTURA</p>
+          <h3>Expresión artística</h3>
+          <p>
+            Acércate a nuevas experiencias creativas y culturales.
+          </p>
+        </article>
+
+        <article class="actividad">
+          <p class="numero">02 / COMUNIDAD</p>
+          <h3>Participación estudiantil</h3>
+          <p>
+            Comparte ideas y construye vínculos con otros estudiantes.
+          </p>
+        </article>
+
+        <article class="actividad">
+          <p class="numero">03 / BIENESTAR</p>
+          <h3>Autocuidado</h3>
+          <p>
+            Descubre recursos para acompañar tu bienestar integral.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
   </main>
 
+  <!-- PIE DE PÁGINA -->
   <footer>
-    <p>Universidad de Concepción</p>
-    <p>Ejercicio 2 · HTML y CSS</p>
+    <div class="pie-contenido">
+      <div>
+        <h2>Dirección de Servicios Estudiantiles</h2>
+        <p>Universidad de Concepción · Concepción, Chile</p>
+      </div>
+
+      <div>
+        <p>¿Quieres conocer más?</p>
+        <a href="https://dise.udec.cl/">Visita el sitio oficial ↗</a>
+      </div>
+    </div>
+
+    <p class="credito">
+      Ejercicio 2 · Estilos y diagramación básica
+    </p>
   </footer>
 
 </body>
